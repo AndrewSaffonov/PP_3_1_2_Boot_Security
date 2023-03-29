@@ -40,15 +40,3 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 }
-/*
-                .antMatchers("/admin/**").hasRole("ADMIN")
-                .antMatchers("/guest/login", "/guest/registration", "/error").permitAll()
-                .anyRequest().hasAnyRole("USER", "ADMIN")
-                .and()
-                .formLogin().loginPage("/guest/login")
-                .loginProcessingUrl("/guest/login/check")
-                .successHandler(new CustomAuthenticationSuccessHandler())
-                .failureUrl("/guest/login?error")
-                .and()
-                .logout().logoutUrl("/logout").logoutSuccessUrl("/guest/login")
- */
